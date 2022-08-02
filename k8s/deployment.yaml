@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: dsdfy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: dsdfy
   template:
     metadata:
       labels:
-        app: ray
+        app: dsdfy
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/dsdfy:latest
+        name: dsdfy
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "486090ef-e862-4005-9b7f-5e348f893539"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vle52s"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "486090ef-e862-4005-9b7f-5e348f893539"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vme62s"
         - name: Share_Path
           value: "/v2link"
